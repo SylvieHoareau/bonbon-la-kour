@@ -7,6 +7,11 @@
     class="text-center py-16 bg-yellow-200" 
     style="background-image: url('https://img.freepik.com/vecteurs-libre/plaid-orange-texture-fond_1048-2585.jpg?t=st=1735808591~exp=1735812191~hmac=bc151ea5a8c9478f40083c39c51f39c11ab7d556b8702c501dbd76655eb99d88&w=740'); background-size: cover; background-blend-mode: multiply;"
 >
+    <img 
+        src="https://files.oaiusercontent.com/file-Dxe3UcEW99EKdA8dbNwHNz?se=2025-01-02T09%3A37%3A33Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dfbf950ed-aad9-48ad-830a-e6acaef077ab.webp&sig=qJJGEzDJBhdBW1zbr7eBZuVvlMAhtH24A3s6%2BlE5LTs%3D" 
+        alt="logo de Bonbon La Kour"
+        class="logo"
+    >
     <!-- Titre principal -->
     <h1 class="text-5xl font-extrabold text-white drop-shadow-md">
         Bienvenue chez {title}
@@ -57,6 +62,12 @@ section {
     background-color: #fbbf24;
     background-blend-mode: multiply;
     color: #333;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    margin: 1rem auto;
 }
 
 h1 {
