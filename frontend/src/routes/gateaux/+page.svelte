@@ -14,6 +14,24 @@
             image: "https://img.freepik.com/photos-gratuite/delicieux-macarons-maison-noix-coco-noix-coco-fraiche-vue-dessus_114579-9815.jpg?t=st=1735805055~exp=1735808655~hmac=84f4d8bbd19ce4ee88041a150a0784b2e68bd9885099d146f09b92ba82cf207e&w=996", 
             price: "10€"
         },
+        {
+            id: 4, 
+            name: "Gâteau Banane",
+            image: "https://img.freepik.com/photos-gratuite/vue-du-delicieux-gateau-dessert-aux-bananes_23-2150822885.jpg?t=st=1735822242~exp=1735825842~hmac=b1f27ee076d9f2fd79cd0e949bb82549628ce47fd65fa6b5ba3025f7236647d1&w=900",
+            price: "15€"
+        },
+        {
+            id: 4, 
+            name: "Gâteau Manioc",
+            image: "https://img.freepik.com/photos-gratuite/biscuits-patissiers-est-interieur-plaque-anneaux-ananas-seche-creme-blanche-table-bois_140725-29486.jpg?t=st=1735822201~exp=1735825801~hmac=5650c2e4ef9ea5d0dac084602753e65c5f4305acb35ef47683ef63c6ea774b4c&w=900",
+            price: "12€"
+        },
+        {
+            id: 4, 
+            name: "Gâteau Chemin de Fer",
+            image: "https://img.freepik.com/photos-gratuite/delicieux-gateau-aux-framboises-fait-maison_114579-47537.jpg?t=st=1735822392~exp=1735825992~hmac=356607ddd9f83a9dfd06b4d87f34526a47c10b95eaaf6f52820287452140b04d&w=900",
+            price: "16€"
+        }
     ]
 </script>
 
