@@ -2,6 +2,9 @@ import express from 'express';
 import nodemailer from 'nodemailer';
 import bodyParser from 'body-parser';
 import cors from 'cors';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const app = express();
 
@@ -17,15 +20,15 @@ app.post("/send", async (req, res) => {
         const transporter = nodemailer.createTransport({
             service: "Gmail",
             auth: {
-                user: "your-gmail-account",
-                pass: "your-gmail-password"
+                user: process.env.EMAIL_USER,
+                pass: process.env.EMAIL_PASS
             }
         });
 
         await transporter.sendMail({
             from: `"${nom} ${prenom}" <${email}>`,
-            to: "recipient-email@example.com",
-            subject: "Nouveau message depuis votre site web",
+            to: process.env.EMAIL_ADRESS,
+            subject: "Nouveau message depuis votre site web Bonbon La Kour",
             text: message
         });
 
