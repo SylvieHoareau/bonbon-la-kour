@@ -14,7 +14,7 @@
 - Encourager la communauté à contribuer à la croissance et à l'amélioration de l'application
 
 ## Fonctionnalités
-- **Catalogue intercatif :** Parcourez les gâteaux avec des images attrayantes et des descriptions détaillées
+- **Catalogue interactif :** Parcourez les gâteaux avec des images attrayantes et des descriptions détaillées
 - **Détails des gâteaux :** Cliquez sur "En savoir plus" pour accéder aux informations complètes, y compris les prix et descriptions.
 - **Interface accessible :** Concu avec une attention particulière aux meilleures pratiques d'accessibilité
 - **Design responsive :** Compatible avec les ordinateurs, tablettes et smartphones
