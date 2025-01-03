@@ -87,4 +87,9 @@
         border: none;
         cursor: pointer;
     }
+
+    #gateau-title {
+        font-weight: 700;
+        font-size: 2rem;
+    }
 </style>

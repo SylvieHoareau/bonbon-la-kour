@@ -1,31 +1,34 @@
 <script>
-    document.querySelector("form").addEventListener("submit", async (e) => {
-        e.preventDefault();
+    document.addEventListener("DOMContentLoaded", () => {
+        document.querySelector("form").addEventListener("submit", async (e) => {
+            e.preventDefault();
 
-        const formData = new FormData(e.target);
+            const formData = new FormData(e.target);
 
-        const data = Object.fromEntries(formData.entries());
+            const data = Object.fromEntries(formData.entries());
 
-        try {
-            const response = await fetch("/api/contact", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(data),
-            });
+            try {
+                const response = await fetch("/api/contact", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(data),
+                });
 
-            if (response.ok) {
-                alert("Votre message a bien été envoyé!");
-                e.target.reset();
-            } else {
-                alert("Une erreur est survenue. Merci de réessayer.");
+                if (response.ok) {
+                    alert("Votre message a bien été envoyé!");
+                    e.target.reset();
+                } else {
+                    alert("Une erreur est survenue. Merci de réessayer.");
+                }
+            } catch (error) {
+                console.error("Erreur :", error);
+                alert("Impossible d'envoyer votre message.Vérifiez votre connexion.");
             }
-        } catch (e) {
-            console.error("Erreur :", error);
-            alert("Impossible d'envoyer votre message.Vérifiez votre connexion.");
-        }
+        });
     });
+    
 </script>
 
 <section 
@@ -60,3 +63,11 @@
         </div>
     </form>
 </section>
+
+<style>
+    form {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+</style>
