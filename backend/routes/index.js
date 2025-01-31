@@ -1,19 +1,18 @@
 import express from 'express';
 import nodemailer from 'nodemailer';
-import bodyParser from 'body-parser';
-import cors from 'cors';
 import dotenv from 'dotenv';
 
 dotenv.config();
 
-const app = express();
+const router = express.Router();
 
-app.use(cors());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+// Affichage de la page d'accueil
+router.get('/', (_req, res) => {
+    res.render('index');
+});
 
 // Pour envoyer un message
-app.post("/send", async (req, res) => {
+router.post("/send", async (req, res) => {
     const { nom, prenom, email, message } = req.body;
 
     try {
@@ -39,7 +38,4 @@ app.post("/send", async (req, res) => {
     }
 });
 
-// Démarrage du serveur
-app.listen(3000, () => {
-    console.log("Serveur en écoute sur le port 3000");
-});
+export default router;

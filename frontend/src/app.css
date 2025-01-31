@@ -2,7 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+:root {
+    --primary-color: #f97316;
+    --secondary-color: #10b981;
+    --background-color: #fffbeb;
+    --text-color: #333;
+    --white: #ffffff;
+}
+
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
